@@ -2,27 +2,27 @@
 
 ## Project Description
 
-Smart IT Equipment Advisor is a React web application that helps users choose suitable IT equipment based on different environments. The system provides equipment recommendations for Home, Small Office, Company, and Data Center environments.
+Smart IT Equipment Advisor is a React web application designed to help users choose suitable IT equipment based on different environments. The application recommends networking, security, storage, server, and power equipment for Home, Small Office, Company, and Data Center environments.
 
 ---
 
 ## Features
 
-- Home page with project introduction
+- Home page introducing the project
 - About page
-- Equipment recommendations by environment
-- Equipment categories
-- Equipment information with specifications
-- Environment overview
+- IT equipment recommendations based on environment
+- Equipment Categories page
+- Equipment page with technical specifications
+- Environments page
 - Contact page
-- Responsive user interface
+- Responsive and user-friendly interface
 
 ---
 
 ## Technologies Used
 
 - React.js
-- React Router
+- React Router DOM
 - JavaScript (ES6)
 - HTML5
 - CSS3
@@ -31,28 +31,34 @@ Smart IT Equipment Advisor is a React web application that helps users choose su
 
 ## Setup Instructions
 
-1. Clone the repository:
+### Clone the repository
 
 ```bash
 git clone https://github.com/talalazzam/Smart-IT-Equipment-Advisor.git
 ```
 
-2. Open the project folder:
+### Open the project folder
 
 ```bash
 cd Smart-IT-Equipment-Advisor
 ```
 
-3. Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-4. Start the development server:
+### Start the application
 
 ```bash
 npm start
+```
+
+The application will run locally at:
+
+```
+http://localhost:3000
 ```
 
 ---
@@ -60,48 +66,97 @@ npm start
 ## Project Structure
 
 ```
-src/
- ├── components/
- ├── pages/
- ├── styles/
- ├── App.js
- └── index.js
+Smart-IT-Equipment-Advisor/
+│
+├── public/
+├── screenshots/
+│   ├── home.png
+│   ├── about.png
+│   ├── recommendations.png
+│   ├── equipment.png
+│   ├── categories.png
+│   ├── environments.png
+│   └── contact.png
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.js
+│   └── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
 ---
 
-## Screenshots
+# Screenshots
 
-### Home Page
+## Home Page
 
-_(Add screenshot here later.)_
+![Home](screenshots/home.png)
 
-### About Page
+---
 
-_(Add screenshot here later.)_
+## About Page
 
-### Recommendations Page
+![About](screenshots/about.png)
 
-_(Add screenshot here later.)_
+---
 
-### Equipment Page
+## Recommendations Page
 
-_(Add screenshot here later.)_
+![Recommendations](screenshots/recommendations.png)
 
-### Equipment Categories Page
+---
 
-_(Add screenshot here later.)_
+## Equipment Page
 
-### Environments Page
+![Equipment](screenshots/equipment.png)
 
-_(Add screenshot here later.)_
+---
 
-### Contact Page
+## Equipment Categories Page
 
-_(Add screenshot here later.)_
+![Categories](screenshots/categories.png)
+
+---
+
+## Environments Page
+
+![Environments](screenshots/environments.png)
+
+---
+
+## Contact Page
+
+![Contact](screenshots/contact.png)
+
+---
+
+## Live Demo
+
+The application is deployed on Vercel:
+
+https://smart-it-equipment-advisor-three.vercel.app
+
+---
+
+## GitHub Repository
+
+https://github.com/talalazzam/Smart-IT-Equipment-Advisor
 
 ---
 
 ## Author
 
-Talal Azzam
+**Talal Azzam**
+
+---
+
+## License
+
+This project was developed for educational purposes as part of an Advanced Web Programming course.
