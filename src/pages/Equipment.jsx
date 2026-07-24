@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import EquipmentCard from "../components/EquipmentCard";
 
 import router from "../assets/equipment/router.png";
@@ -24,7 +24,6 @@ const Equipment = () => {
         "Use: Home & Small Office",
       ],
     },
-
     {
       name: "Network Switch",
       category: "Networking",
@@ -38,7 +37,6 @@ const Equipment = () => {
         "Use: Offices & Companies",
       ],
     },
-
     {
       name: "Firewall",
       category: "Security",
@@ -52,7 +50,6 @@ const Equipment = () => {
         "Use: Companies & Data Centers",
       ],
     },
-
     {
       name: "Wireless Access Point",
       category: "Networking",
@@ -66,7 +63,6 @@ const Equipment = () => {
         "Use: Homes & Offices",
       ],
     },
-
     {
       name: "Rack Server",
       category: "Servers",
@@ -80,7 +76,6 @@ const Equipment = () => {
         "Use: Companies & Data Centers",
       ],
     },
-
     {
       name: "NAS Storage",
       category: "Storage",
@@ -94,7 +89,6 @@ const Equipment = () => {
         "Use: Home & Business",
       ],
     },
-
     {
       name: "UPS",
       category: "Power",
@@ -119,7 +113,7 @@ const Equipment = () => {
       <div className="equipmentCards">
         {equipment.map((item) => (
           <EquipmentCard
-            key={item.id}
+            key={item.name}
             name={item.name}
             category={item.category}
             description={item.description}
