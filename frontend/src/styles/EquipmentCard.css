@@ -1,0 +1,45 @@
+.equipmentCard {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.equipmentCard:hover {
+    transform: translateY(-6px);
+}
+
+.equipmentImage {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.equipmentCard h2 {
+    color: #0b3d91;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.equipmentCard h4 {
+    color: #0077cc;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.equipmentCard ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.equipmentCard li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}

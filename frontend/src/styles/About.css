@@ -1,0 +1,72 @@
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.pageContainer h1 {
+  color: #0b3d91;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pageContainer > p {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.infoCard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-6px);
+}
+
+.infoCard h2 {
+  color: #0b3d91;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.infoCard p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 30px 20px;
+  }
+
+  .pageContainer h1 {
+    font-size: 32px;
+  }
+
+  .pageContainer > p {
+    font-size: 16px;
+  }
+
+  .infoCard {
+    padding: 25px;
+  }
+
+  .infoCard h2 {
+    font-size: 22px;
+  }
+}

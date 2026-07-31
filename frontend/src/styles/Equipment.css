@@ -1,0 +1,16 @@
+.equipmentPage {
+    padding: 40px;
+    text-align: center;
+}
+
+.equipmentPage h1 {
+    color: #0b3d91;
+    margin-bottom: 40px;
+}
+
+.equipmentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}

@@ -1,0 +1,75 @@
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    min-height: calc(100vh - 180px);
+    text-align: center;
+}
+
+.contactContainer h1 {
+    font-size: 52px;
+    color: #0b3d91;
+    margin-bottom: 20px;
+}
+
+.contactContainer > p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.contactCard {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.contactCard:hover {
+    transform: translateY(-6px);
+}
+
+.contactCard h2 {
+    color: #0b3d91;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contactCard p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+@media (max-width:768px) {
+
+    .contactContainer {
+        padding: 40px 20px;
+    }
+
+    .contactContainer h1 {
+        font-size: 38px;
+    }
+
+    .contactContainer > p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .contactCard h2 {
+        font-size: 24px;
+    }
+
+    .contactCard p {
+        font-size: 16px;
+    }
+
+}

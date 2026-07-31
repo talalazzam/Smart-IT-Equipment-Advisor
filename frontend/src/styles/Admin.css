@@ -1,0 +1,242 @@
+.adminContainer {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.adminHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.adminHeader h1 {
+    color: #0d47a1;
+    font-size: 34px;
+}
+
+.logoutButton {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.logoutButton:hover {
+    background: #b71c1c;
+}
+
+.adminCard,
+.tableCard {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.12);
+}
+
+.adminCard h2,
+.tableCard h2 {
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+.adminCard input,
+.adminCard select,
+.adminCard textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.adminCard textarea {
+    resize: vertical;
+}
+
+.buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.addButton,
+.updateButton,
+.clearButton {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.addButton {
+    background: #2e7d32;
+    color: white;
+}
+
+.addButton:hover {
+    background: #1b5e20;
+}
+
+.updateButton {
+    background: #1565c0;
+    color: white;
+}
+
+.updateButton:hover {
+    background: #0d47a1;
+}
+
+.clearButton {
+    background: #757575;
+    color: white;
+}
+
+.clearButton:hover {
+    background: #555;
+}
+
+.tableCard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableCard th {
+    background: #0d47a1;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.tableCard td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.tableCard tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.tableCard tr:hover {
+    background: #eef5ff;
+}
+
+.editButton,
+.deleteButton {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: .3s;
+}
+
+.editButton {
+    background: #f9a825;
+    color: white;
+}
+
+.editButton:hover {
+    background: #f57f17;
+}
+
+.deleteButton {
+    background: #d32f2f;
+    color: white;
+}
+
+.deleteButton:hover {
+    background: #b71c1c;
+}
+
+@media (max-width: 900px) {
+
+    .adminHeader {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+    }
+
+    .tableCard {
+        overflow-x: auto;
+    }
+
+    .tableCard table {
+        min-width: 900px;
+    }
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.loginCard {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.15);
+}
+
+.loginCard h1 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+.loginCard input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.loginCard button {
+    width: 100%;
+    padding: 12px;
+    background: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginCard button:hover {
+    background: #08306b;
+}
+
+.error {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
