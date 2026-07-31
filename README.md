@@ -2,30 +2,33 @@
 
 ## Project Description
 
-Smart IT Equipment Advisor is a React web application designed to help users choose suitable IT equipment based on different environments. The application recommends networking, security, storage, server, and power equipment for Home, Small Office, Company, and Data Center environments.
+Smart IT Equipment Advisor is a full-stack web application built with React, Node.js, Express, and MySQL. It helps users explore IT equipment, browse equipment categories, and view recommendations for different environments such as Home, Small Office, Company, and Data Center.
 
----
-
-## Features
-
-- Home page introducing the project
-- About page
-- IT equipment recommendations based on environment
-- Equipment Categories page
-- Equipment page with technical specifications
-- Environments page
-- Contact page
-- Responsive and user-friendly interface
+The system includes user authentication, an admin panel for managing equipment and categories, and image upload functionality.
 
 ---
 
 ## Technologies Used
 
 - React.js
-- React Router DOM
-- JavaScript (ES6)
-- HTML5
-- CSS3
+- Node.js
+- Express.js
+- MySQL
+- CSS
+- Git & GitHub
+
+---
+
+## Features
+
+- User Login
+- User Signup
+- Admin Dashboard
+- Equipment Management
+- Category Management
+- Environment Recommendations
+- Image Upload
+- Responsive Design
 
 ---
 
@@ -37,25 +40,40 @@ Smart IT Equipment Advisor is a React web application designed to help users cho
 git clone https://github.com/talalazzam/Smart-IT-Equipment-Advisor.git
 ```
 
-### Open the project folder
+### Install frontend dependencies
 
 ```bash
-cd Smart-IT-Equipment-Advisor
-```
-
-### Install dependencies
-
-```bash
+cd frontend
 npm install
 ```
 
-### Start the application
+### Install backend dependencies
 
 ```bash
+cd ../backend
+npm install
+```
+
+### Configure MySQL
+
+Create a MySQL database and import the provided SQL file.
+
+Update your database connection inside the backend configuration file.
+
+### Start the backend
+
+```bash
+node server.js
+```
+
+### Start the frontend
+
+```bash
+cd ../frontend
 npm start
 ```
 
-The application will run locally at:
+The application will run at:
 
 ```
 http://localhost:3000
@@ -63,100 +81,48 @@ http://localhost:3000
 
 ---
 
-## Project Structure
-
-```
-Smart-IT-Equipment-Advisor/
-│
-├── public/
-├── screenshots/
-│   ├── home.png
-│   ├── about.png
-│   ├── recommendations.png
-│   ├── equipment.png
-│   ├── categories.png
-│   ├── environments.png
-│   └── contact.png
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── App.js
-│   └── index.js
-│
-├── package.json
-├── package-lock.json
-└── README.md
-```
-
----
-
 # Screenshots
 
-## Home Page
+## Home
 
-![Home](screenshots/home.png)
+![Home](frontend/screenshots/home.png)
 
----
+## About
 
-## About Page
+![About](frontend/screenshots/about.png)
 
-![About](screenshots/about.png)
+## Login
 
----
+![Login](frontend/screenshots/adminLogin.png)
 
-## Recommendations Page
+## Signup
 
-![Recommendations](screenshots/recommendations.png)
+![Signup](frontend/screenshots/Signup.png)
 
----
+## Logged In
 
-## Equipment Page
+![Logged In](frontend/screenshots/loggedIN.png)
 
-![Equipment](screenshots/equipment.png)
+## Admin Panel
 
----
+![Admin Panel](frontend/screenshots/admin panel.png)
 
-## Equipment Categories Page
+## Equipment
 
-![Categories](screenshots/categories.png)
+![Equipment](frontend/screenshots/equipment.png)
 
----
+## Categories
 
-## Environments Page
+![Categories](frontend/screenshots/categories.png)
 
-![Environments](screenshots/environments.png)
+## Recommendations
 
----
+![Recommendations](frontend/screenshots/recommendations.png)
 
-## Contact Page
+## Environments
 
-![Contact](screenshots/contact.png)
+![Environments](frontend/screenshots/environments.png)
 
----
+## Contact
 
-## Live Demo
-
-The application is deployed on Vercel:
-
-https://smart-it-equipment-advisor-three.vercel.app
-
----
-
-## GitHub Repository
-
-https://github.com/talalazzam/Smart-IT-Equipment-Advisor
-
----
-
-## Author
-
-**Talal Azzam**
-
----
-
-## License
-
-This project was developed for educational purposes as part of an Advanced Web Programming course.
+![Contact](frontend/screenshots/contact.png)
