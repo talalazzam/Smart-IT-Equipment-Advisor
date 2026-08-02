@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db");
 
-// ================= LOGIN =================
-
 router.post("/login", (req, res) => {
   const { email, password } = req.body;
 
@@ -44,8 +42,6 @@ router.post("/login", (req, res) => {
     });
   });
 });
-
-// ================= SIGN UP =================
 
 router.post("/signup", (req, res) => {
   const { name, email, password } = req.body;

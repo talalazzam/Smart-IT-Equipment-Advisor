@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
@@ -18,6 +19,12 @@ app.get("/", (req, res) => {
   res.send("Backend Running");
 });
 
-app.listen(5000, () => {
-  console.log("NEW BACKEND STARTED");
+//pp.listen(5000, () => {
+//console.log("NEW BACKEND STARTED");
+//});
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

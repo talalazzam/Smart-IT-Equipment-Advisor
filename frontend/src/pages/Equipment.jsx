@@ -12,7 +12,9 @@ const Equipment = () => {
 
   const loadEquipment = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/equipment");
+      const response = await axios.get(
+        "https://smart-it-equipment-advisor-2.onrender.com/equipment",
+      );
       setEquipment(response.data);
     } catch (error) {
       console.log(error);

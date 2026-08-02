@@ -16,10 +16,13 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:5000/users/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://smart-it-equipment-advisor-2.onrender.comusers/login",
+        {
+          email,
+          password,
+        },
+      );
 
       if (response.data.success) {
         localStorage.setItem("role", response.data.role);

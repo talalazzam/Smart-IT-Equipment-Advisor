@@ -30,7 +30,9 @@ const Admin = () => {
 
   const loadEquipment = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/equipment");
+      const response = await axios.get(
+        "https://smart-it-equipment-advisor-2.onrender.comequipment",
+      );
       setEquipment(response.data);
     } catch (error) {
       console.log(error);
@@ -81,11 +83,15 @@ const Admin = () => {
     formData.append("image", selectedImage);
 
     try {
-      await axios.post("http://localhost:5000/equipment", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
+      await axios.post(
+        "https://smart-it-equipment-advisor-2.onrender.comequipment",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
         },
-      });
+      );
 
       loadEquipment();
       clearForm();
@@ -127,11 +133,15 @@ const Admin = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5000/equipment/${form.id}`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
+      await axios.put(
+        `https://smart-it-equipment-advisor-2.onrender.com/equipment/${form.id}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
         },
-      });
+      );
 
       loadEquipment();
       clearForm();
@@ -148,7 +158,9 @@ const Admin = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/equipment/${id}`);
+      await axios.delete(
+        `https://smart-it-equipment-advisor-2.onrender.comequipment/${id}`,
+      );
 
       loadEquipment();
 

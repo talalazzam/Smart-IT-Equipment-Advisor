@@ -5,7 +5,7 @@ const EquipmentCard = ({ name, category, description, image }) => {
   return (
     <div className="equipmentCard">
       <img
-        src={`http://localhost:5000/uploads/${image}`}
+        src={`https://smart-it-equipment-advisor-2.onrender.comuploads/${image}`}
         alt={name}
         className="equipmentImage"
         onError={(e) => {

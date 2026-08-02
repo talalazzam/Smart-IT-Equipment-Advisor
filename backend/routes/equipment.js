@@ -3,9 +3,6 @@ const router = express.Router();
 const db = require("../db");
 const upload = require("../middleware/upload");
 
-// ======================
-// GET ALL EQUIPMENT
-// ======================
 router.get("/", (req, res) => {
   const sql = "SELECT * FROM equipment";
 
@@ -21,9 +18,6 @@ router.get("/", (req, res) => {
   });
 });
 
-// ======================
-// ADD EQUIPMENT
-// ======================
 router.post("/", upload.single("image"), (req, res) => {
   const { name, category, description } = req.body;
 
@@ -58,9 +52,6 @@ router.post("/", upload.single("image"), (req, res) => {
   });
 });
 
-// ======================
-// UPDATE EQUIPMENT
-// ======================
 router.put("/:id", upload.single("image"), (req, res) => {
   const { name, category, description } = req.body;
   const id = req.params.id;
@@ -125,9 +116,6 @@ router.put("/:id", upload.single("image"), (req, res) => {
   });
 });
 
-// ======================
-// DELETE EQUIPMENT
-// ======================
 router.delete("/:id", (req, res) => {
   const id = req.params.id;
 

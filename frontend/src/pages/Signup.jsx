@@ -31,7 +31,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/users/signup",
+        "https://smart-it-equipment-advisor-2.onrender.com/users/signup",
         user,
       );
 
