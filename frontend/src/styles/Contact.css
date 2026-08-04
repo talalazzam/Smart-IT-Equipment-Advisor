@@ -4,19 +4,21 @@
     padding: 60px 20px;
     min-height: calc(100vh - 180px);
     text-align: center;
+    background: #F8F9FA;
 }
 
 .contactContainer h1 {
     font-size: 52px;
-    color: #0b3d91;
+    color: #46344E;
     margin-bottom: 20px;
+    font-weight: 800;
 }
 
 .contactContainer > p {
     font-size: 20px;
-    color: #555;
+    color: #5A5560;
     margin-bottom: 60px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 .contactGrid {
@@ -26,25 +28,29 @@
 }
 
 .contactCard {
-    background: white;
+    background: #FFFFFF;
     padding: 35px 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.12);
-    transition: .3s;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(70, 52, 78, 0.10);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .contactCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    border-color: #FAED26;
+    box-shadow: 0 14px 35px rgba(70, 52, 78, 0.18);
 }
 
 .contactCard h2 {
-    color: #0b3d91;
+    color: #46344E;
     font-size: 30px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .contactCard p {
-    color: #555;
+    color: #5A5560;
     font-size: 17px;
     line-height: 1.8;
 }

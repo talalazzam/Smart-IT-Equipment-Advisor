@@ -2,11 +2,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f5f7fa;
+    background: linear-gradient(135deg, #F8F9FA 0%, #FFFDF2 100%);
+    color:#46344E;
 }
 
 .App{
@@ -38,8 +39,9 @@ body{
 .equipment h1,
 .contact h1{
     font-size:42px;
-    color:#0b3d91;
+    color:#46344E;
     margin-bottom:20px;
+    font-weight:800;
 }
 
 .home p,
@@ -48,24 +50,27 @@ body{
 .equipment p,
 .contact p{
     font-size:18px;
-    color:#555;
+    color:#5A5560;
     max-width:700px;
-    line-height:1.7;
+    line-height:1.8;
 }
 
 .btn{
     margin-top:30px;
-    padding:12px 30px;
-    background:#0b3d91;
+    padding:14px 32px;
+    background:#46344E;
     color:white;
     border:none;
-    border-radius:6px;
+    border-radius:10px;
     cursor:pointer;
     font-size:16px;
+    font-weight:bold;
+    transition:all .3s ease;
 }
 
 .btn:hover{
-    background:#082d6b;
+    background:#5A5560;
+    transform:translateY(-2px);
 }
 
 .environments{
@@ -80,60 +85,81 @@ body{
     width:220px;
     background:white;
     padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(70,52,78,.12);
+    border:2px solid transparent;
+    transition:all .3s ease;
 }
 
-/* Equipment */
+.environmentCard:hover{
+    border-color:#FAED26;
+    transform:translateY(-6px);
+}
 
 .equipment input{
     width:300px;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
+    padding:12px;
+    border:2px solid #E5E7EB;
+    border-radius:10px;
+}
+
+.equipment input:focus{
+    outline:none;
+    border-color:#FAED26;
+    box-shadow:0 0 0 4px rgba(250,237,38,.25);
 }
 
 .equipment button{
-    padding:10px 20px;
-    background:#0b3d91;
+    padding:12px 22px;
+    background:#46344E;
     color:white;
     border:none;
-    border-radius:5px;
+    border-radius:10px;
     cursor:pointer;
+    font-weight:bold;
+    transition:all .3s ease;
 }
 
 .equipment button:hover{
-    background:#082d6b;
+    background:#5A5560;
+    transform:translateY(-2px);
 }
 
 .equipment-card{
     width:320px;
     margin:20px auto;
-    padding:20px;
+    padding:22px;
     background:white;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(70,52,78,.12);
+    transition:all .3s ease;
+}
+
+.equipment-card:hover{
+    transform:translateY(-6px);
+    border:2px solid #FAED26;
 }
 
 .equipment-image{
     width:100%;
     height:180px;
     object-fit:cover;
-    border-radius:8px;
+    border-radius:10px;
 }
 
 .equipment-card h2{
-    color:#0b3d91;
+    color:#46344E;
     margin-top:15px;
 }
 
 .equipment-card h4{
-    color:#666;
+    color:#9D8D8F;
     margin:10px 0;
 }
 
 .equipment-card p{
     margin-bottom:15px;
+    color:#5A5560;
 }
 
 .contact p{

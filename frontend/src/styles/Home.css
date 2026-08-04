@@ -1,7 +1,7 @@
 .homePage {
     width: 100%;
     padding: 50px 40px;
-    background: #f5f7fb;
+    background: #F8F9FA;
 }
 
 .heroSection {
@@ -11,13 +11,14 @@
 
 .heroSection h1 {
     font-size: 52px;
-    color: #0b3d91;
+    color: #46344E;
     margin-bottom: 15px;
+    font-weight: 800;
 }
 
 .heroSection p {
     font-size: 20px;
-    color: #555;
+    color: #5A5560;
 }
 
 .environmentSection {
@@ -32,19 +33,25 @@
     width: 220px;
     padding: 20px;
     border: none;
-    border-radius: 12px;
-    background: white;
+    border-radius: 15px;
+    background: #FFFFFF;
     cursor: pointer;
     font-size: 24px;
     font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
-    transition: .3s;
+    color: #46344E;
+    box-shadow: 0 8px 20px rgba(70, 52, 78, 0.12);
+    transition: all 0.3s ease;
 }
 
-.environmentButton:hover,
+.environmentButton:hover {
+    background: #FAED26;
+    color: #46344E;
+    transform: translateY(-4px);
+}
+
 .environmentButton.active {
-    background: #0b3d91;
-    color: white;
+    background: #46344E;
+    color: #FAED26;
 }
 
 .featuresSection {
@@ -54,7 +61,7 @@
 
 .featuresSection h2 {
     text-align: center;
-    color: #0b3d91;
+    color: #46344E;
     font-size: 38px;
     margin-bottom: 45px;
 }
@@ -63,16 +70,17 @@
     display: flex;
     align-items: center;
     gap: 35px;
-    background: white;
+    background: #FFFFFF;
     padding: 35px;
-    border-radius: 12px;
+    border-radius: 18px;
     margin-bottom: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.12);
-    transition: .3s;
+    box-shadow: 0 8px 25px rgba(70, 52, 78, 0.10);
+    transition: all 0.3s ease;
 }
 
 .featureCard:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(70, 52, 78, 0.18);
 }
 
 .featureIcon {
@@ -86,13 +94,13 @@
 }
 
 .featureContent h3 {
-    color: #0b3d91;
+    color: #46344E;
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .featureContent p {
-    color: #555;
+    color: #5A5560;
     font-size: 18px;
     line-height: 1.7;
 }
@@ -103,44 +111,44 @@
 
 .recommendationSection h2 {
     text-align: center;
-    color: #0b3d91;
+    color: #46344E;
     margin-bottom: 35px;
     font-size: 34px;
 }
 
 .equipmentGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,280px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
     justify-content: center;
     gap: 30px;
 }
 
-@media(max-width:768px){
+@media (max-width:768px) {
 
-.heroSection h1{
-    font-size:36px;
+.heroSection h1 {
+    font-size: 36px;
 }
 
-.heroSection p{
-    font-size:16px;
+.heroSection p {
+    font-size: 16px;
 }
 
-.environmentButton{
-    width:100%;
-    max-width:320px;
+.environmentButton {
+    width: 100%;
+    max-width: 320px;
 }
 
-.featureCard{
-    flex-direction:column;
-    text-align:center;
+.featureCard {
+    flex-direction: column;
+    text-align: center;
 }
 
-.featureContent h3{
-    font-size:24px;
+.featureContent h3 {
+    font-size: 24px;
 }
 
-.featureContent p{
-    font-size:16px;
+.featureContent p {
+    font-size: 16px;
 }
 
 }

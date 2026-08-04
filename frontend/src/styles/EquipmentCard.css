@@ -1,34 +1,48 @@
 .equipmentCard {
     width: 280px;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 25px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(70, 52, 78, 0.12);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .equipmentCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    border-color: #FAED26;
+    box-shadow: 0 15px 35px rgba(70, 52, 78, 0.20);
 }
 
 .equipmentImage {
     width: 180px;
     height: 180px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    transition: transform 0.3s ease;
+}
+
+.equipmentCard:hover .equipmentImage {
+    transform: scale(1.08);
 }
 
 .equipmentCard h2 {
-    color: #0b3d91;
+    color: #46344E;
     margin-bottom: 10px;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .equipmentCard h4 {
-    color: #0077cc;
-    margin-bottom: 15px;
-    font-size: 18px;
+    display: inline-block;
+    background: #FAED26;
+    color: #46344E;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 18px;
 }
 
 .equipmentCard ul {
@@ -38,8 +52,12 @@
 }
 
 .equipmentCard li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 15px;
-    color: #333;
-    line-height: 1.4;
+    color: #5A5560;
+    line-height: 1.6;
+}
+
+.equipmentCard li::marker {
+    color: #FAED26;
 }

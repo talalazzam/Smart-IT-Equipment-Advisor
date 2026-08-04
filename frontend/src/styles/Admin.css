@@ -2,61 +2,74 @@
     max-width: 1300px;
     margin: 40px auto;
     padding: 20px;
+    background: #F8F9FA;
 }
 
 .adminHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .adminHeader h1 {
-    color: #0d47a1;
-    font-size: 34px;
+    color: #46344E;
+    font-size: 36px;
+    font-weight: 800;
 }
 
 .logoutButton {
-    background: #d32f2f;
+    background: #9B786F;
     color: white;
     border: none;
     padding: 12px 22px;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    transition: .3s;
+    transition: all .3s ease;
 }
 
 .logoutButton:hover {
-    background: #b71c1c;
+    background: #7E5F58;
+    transform: translateY(-2px);
 }
 
 .adminCard,
 .tableCard {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 30px;
     margin-bottom: 35px;
-    box-shadow: 0 5px 18px rgba(0,0,0,.12);
+    box-shadow: 0 8px 25px rgba(70, 52, 78, .12);
 }
 
 .adminCard h2,
 .tableCard h2 {
     margin-bottom: 20px;
-    color: #0d47a1;
+    color: #46344E;
+    font-size: 28px;
 }
 
 .adminCard input,
 .adminCard select,
 .adminCard textarea {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
     font-size: 15px;
     box-sizing: border-box;
+    transition: .3s;
+}
+
+.adminCard input:focus,
+.adminCard select:focus,
+.adminCard textarea:focus {
+    border-color: #FAED26;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(250, 237, 38, .25);
 }
 
 .adminCard textarea {
@@ -73,39 +86,42 @@
 .updateButton,
 .clearButton {
     border: none;
-    padding: 12px 22px;
-    border-radius: 8px;
+    padding: 12px 24px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    transition: .3s;
+    transition: all .3s ease;
 }
 
 .addButton {
-    background: #2e7d32;
-    color: white;
+    background: #FAED26;
+    color: #46344E;
 }
 
 .addButton:hover {
-    background: #1b5e20;
+    background: #FFF36A;
+    transform: translateY(-2px);
 }
 
 .updateButton {
-    background: #1565c0;
+    background: #46344E;
     color: white;
 }
 
 .updateButton:hover {
-    background: #0d47a1;
+    background: #5A5560;
+    transform: translateY(-2px);
 }
 
 .clearButton {
-    background: #757575;
+    background: #9D8D8F;
     color: white;
 }
 
 .clearButton:hover {
-    background: #555;
+    background: #7E7072;
+    transform: translateY(-2px);
 }
 
 .tableCard table {
@@ -114,53 +130,55 @@
 }
 
 .tableCard th {
-    background: #0d47a1;
+    background: #46344E;
     color: white;
-    padding: 14px;
+    padding: 15px;
     text-align: left;
 }
 
 .tableCard td {
-    padding: 14px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    border-bottom: 1px solid #E5E7EB;
     vertical-align: top;
 }
 
 .tableCard tr:nth-child(even) {
-    background: #f8f8f8;
+    background: #F8F9FA;
 }
 
 .tableCard tr:hover {
-    background: #eef5ff;
+    background: #FFF9C4;
 }
 
 .editButton,
 .deleteButton {
     border: none;
     padding: 8px 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
     margin-right: 8px;
-    transition: .3s;
+    transition: all .3s ease;
 }
 
 .editButton {
-    background: #f9a825;
-    color: white;
+    background: #FAED26;
+    color: #46344E;
 }
 
 .editButton:hover {
-    background: #f57f17;
+    background: #FFF36A;
+    transform: translateY(-2px);
 }
 
 .deleteButton {
-    background: #d32f2f;
+    background: #9B786F;
     color: white;
 }
 
 .deleteButton:hover {
-    background: #b71c1c;
+    background: #7E5F58;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 900px) {
@@ -191,51 +209,60 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    background: #F8F9FA;
 }
 
 .loginCard {
     width: 400px;
     background: white;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 5px 18px rgba(0,0,0,.15);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(70, 52, 78, .12);
 }
 
 .loginCard h1 {
     text-align: center;
-    color: #0d47a1;
+    color: #46344E;
     margin-bottom: 25px;
 }
 
 .loginCard input {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
     font-size: 15px;
     box-sizing: border-box;
+    transition: .3s;
+}
+
+.loginCard input:focus {
+    border-color: #FAED26;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(250, 237, 38, .25);
 }
 
 .loginCard button {
     width: 100%;
-    padding: 12px;
-    background: #0d47a1;
+    padding: 13px;
+    background: #46344E;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all .3s ease;
 }
 
 .loginCard button:hover {
-    background: #08306b;
+    background: #5A5560;
+    transform: translateY(-2px);
 }
 
 .error {
-    color: #d32f2f;
+    color: #C62828;
     text-align: center;
     margin-bottom: 15px;
     font-weight: bold;

@@ -1,22 +1,24 @@
 .pageContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 30px;
+  padding: 60px 30px;
   text-align: center;
+  background: #F8F9FA;
 }
 
 .pageContainer h1 {
-  color: #0b3d91;
-  font-size: 40px;
+  color: #46344E;
+  font-size: 42px;
   margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .pageContainer > p {
   max-width: 900px;
-  margin: 0 auto 50px;
+  margin: 0 auto 55px;
   font-size: 18px;
-  line-height: 1.7;
-  color: #555;
+  line-height: 1.8;
+  color: #5A5560;
 }
 
 .infoGrid {
@@ -26,36 +28,40 @@
 }
 
 .infoCard {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease;
+  background: #FFFFFF;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(70, 52, 78, 0.10);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .infoCard:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  border-color: #FAED26;
+  box-shadow: 0 14px 35px rgba(70, 52, 78, 0.18);
 }
 
 .infoCard h2 {
-  color: #0b3d91;
+  color: #46344E;
   font-size: 24px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .infoCard p {
-  color: #555;
+  color: #5A5560;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 @media (max-width: 768px) {
   .pageContainer {
-    padding: 30px 20px;
+    padding: 35px 20px;
   }
 
   .pageContainer h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .pageContainer > p {
@@ -63,7 +69,7 @@
   }
 
   .infoCard {
-    padding: 25px;
+    padding: 28px;
   }
 
   .infoCard h2 {
